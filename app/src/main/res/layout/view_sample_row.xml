@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable type="suvamjain.example.com.quizapp.TransitionSecondActivity" name="listener"/>
+    </data>
+
+    <Button xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btoption"
+        android:background="@drawable/arrow_shape"
+        android:textAlignment="textStart"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scaleX="0"
+        android:scaleY="0">
+    </Button>
+
+</layout>

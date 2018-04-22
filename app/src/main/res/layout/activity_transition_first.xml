@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:background="#d1d1d1"
+    tools:context=".TransitionFirstActivity">
+
+    <View
+        android:id="@+id/activity_transition_header"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:transitionName="holder1"
+        android:padding="2dp"
+        android:background="@drawable/quiz"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:layout_margin="10dp"
+        android:id="@+id/Catg1"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:background="@color/color_set_1_primary"
+        android:layout_below="@id/activity_transition_header">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Catg1Title"
+            android:text="General Quiz"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/score"
+            android:id="@+id/scoreimg"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BestScore"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="3dp"
+            android:layout_below="@+id/scoreimg"
+            android:text=""
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/noOfQuestions"
+            android:layout_below="@id/Catg1Title"
+            android:text=""
+            android:gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TimeofQuestions"
+            android:layout_below="@id/noOfQuestions"
+            android:text="20 sec per question"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/fab_button"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:transitionName="fab"
+        android:layout_marginTop="-40dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/Catg1"
+        android:layout_alignParentEnd="true"
+        android:elevation="10dp"
+        android:background="@drawable/ic_play_button"
+        android:stateListAnimator="@animator/fab_anim"
+        android:onClick="onFabPressed" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/home"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="#ffffff"
+        android:src="@drawable/home"
+        android:stateListAnimator="@animator/fab_anim"
+        android:onClick="goHome" />
+
+</RelativeLayout>

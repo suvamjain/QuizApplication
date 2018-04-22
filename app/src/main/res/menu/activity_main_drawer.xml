@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Features">
+        <menu>
+            <item
+                android:id="@+id/catg"
+                android:icon="@android:drawable/ic_media_play"
+                android:title="Play Quiz" />
+            <item
+                android:id="@+id/addQues"
+                android:icon="@android:drawable/ic_input_add"
+                android:title="Add Questions" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Homefrag"
+            android:icon="@drawable/home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/log"
+            android:icon="@android:drawable/ic_secure"
+            android:title="LogOut" />
+    </group>
+
+</menu>
