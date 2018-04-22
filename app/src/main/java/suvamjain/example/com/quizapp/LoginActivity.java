@@ -69,7 +69,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         alertDialog2.setMessage("Email - admin\nPassword - admin123");
         alertDialog2.setCancelable(true);
         // Setting Positive "Yes" Button
-        alertDialog2.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+        alertDialog2.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
             }
         });
@@ -82,7 +82,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             SharedPreferences.Editor ed = pref.edit();
             ed.putBoolean("activity_executed", true);
             Intent intent = new Intent(this, LoginActivity.class);
-            Toast.makeText(activity, "Activity not executed", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(activity, "Activity not executed", Toast.LENGTH_SHORT).show();
             startActivity(intent);
             ed.commit();
         }

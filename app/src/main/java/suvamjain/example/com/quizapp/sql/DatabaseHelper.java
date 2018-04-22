@@ -91,7 +91,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(" insert into  " + TABLE_QUIZ + " values(1,'General','National sport of India?','Cricket','Football','Kabaddi','Hockey','Basketball',4)");
         db.execSQL(" insert into  " + TABLE_QUIZ + " values(2,'General','Grand Central Terminal, Park Avenue, New York is the worlds?','largest railway station'," +
                 "'highest railway station','longest railway station','broadest railway station','None of the above',1)");
-        db.execSQL(" insert into  " + TABLE_QUIZ + " values(3,'General','Who is the President of India?','Rajiv Gandhi','Manmohan Singh','Narendra Modi','Mamta Banerjee','Arvind Kejriwal',3)");
+        db.execSQL(" insert into  " + TABLE_QUIZ + " values(3,'General','Who is the PM of India?','Rajiv Gandhi','Manmohan Singh','Narendra Modi','Mamta Banerjee','Arvind Kejriwal',3)");
         db.execSQL(" insert into  " + TABLE_QUIZ + " values(4,'General','Hitler party which came into power in 1933 is known as?','Labour Party'," +
                 "'Nazi Party','Ku-Klux-Klan','Democratic Party','None of the above',2)");
         db.execSQL(" insert into  " + TABLE_QUIZ + " values(5,'General','India got independent in the year?','1675','1940','1947','2000','None of the above',3)");
